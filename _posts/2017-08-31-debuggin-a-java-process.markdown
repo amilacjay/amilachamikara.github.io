@@ -19,10 +19,14 @@ Solution
 
 Steps of JDWP using command line,
 1. Start a java process in debug mode (to debug Test.java class)
-    a. On Windows:
+    On Windows:
+    {% highlight java %}
         java -Xdebug -Xrunjdwp:transport=dt_shmem,address=debug,server=y,suspend=y Test
-    b. On Oracle Solaris and Linux operating systems:
+    {% endhighlight %}
+    On Oracle Solaris and Linux operating systems:
+    {% highlight java %}
         java -Xdebug -Xrunjdwp:transport=dt_socket,address=8888,server=y,suspend=y Test
+    {% endhighlight %}
 
 2. Connect to the debug server using another command line
     a. On Windows:
