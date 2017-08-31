@@ -30,17 +30,22 @@ On Oracle Solaris and Linux operating systems:
 java -Xdebug -Xrunjdwp:transport=dt_socket,address=8888,server=y,suspend=y Test
 {% endhighlight %}
 
+
 2. Connect to the debug server using another command line
 
 On Windows:
 {% highlight java %}
-jdb -attach 'debug'
+jdb -attach "debug"
 {% endhighlight %}
 
 On Oracle Solaris and Linux operating systems:
 {% highlight java %}
 jdb -attach 8888
 {% endhighlight %}
+
+Using IntelliJ IDEA
+
+({{ site.url }}/assets/image1.png)
 
 Check the [JDWP Documentation][jdwp-docs] for more information. If you have questions, you can inbox me.
 
