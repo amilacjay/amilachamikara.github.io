@@ -45,7 +45,7 @@ jdb -attach 8888
 
 Using IntelliJ IDEA
 
-({{ site.url }}/_posts/assets/image1.png)
+![Configurations]({{ site.url }}/_posts/assets/image1.png)
 
 Check the [JDWP Documentation][jdwp-docs] for more information. If you have questions, you can inbox me.
 
