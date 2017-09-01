@@ -31,7 +31,7 @@ On Oracle Solaris and Linux operating systems:
 
 On Windows:
 
-jdb -attach "debug"
+    jdb -attach "debug"
 
 On Oracle Solaris and Linux operating systems:
 
