@@ -9,11 +9,9 @@ Problem
 *If there is a java process that is started within our main java application, it is not possible to
 debug in normal way.*
 
-{% highlight java %}
 
-Runtime.getRuntime().exec("java com.test.debugging.Test");
+	Runtime.getRuntime().exec("java com.test.debugging.Test");
 
-{% endhighlight %}
 
 Solution
 
@@ -21,27 +19,23 @@ Steps of JDWP using command line,
 1. Start a java process in debug mode (to debug Test.java class)
 
 On Windows:
-{% highlight java %}
-java -Xdebug -Xrunjdwp:transport=dt_shmem,address=debug,server=y,suspend=y Test
-{% endhighlight %}
+
+	java -Xdebug -Xrunjdwp:transport=dt_shmem,address=debug,server=y,suspend=y Test
 
 On Oracle Solaris and Linux operating systems:
-{% highlight java %}
-java -Xdebug -Xrunjdwp:transport=dt_socket,address=8888,server=y,suspend=y Test
-{% endhighlight %}
+
+	java -Xdebug -Xrunjdwp:transport=dt_socket,address=8888,server=y,suspend=y Test
 
 
 2. Connect to the debug server using another command line
 
 On Windows:
-{% highlight java %}
+
 jdb -attach "debug"
-{% endhighlight %}
 
 On Oracle Solaris and Linux operating systems:
-{% highlight java %}
-jdb -attach 8888
-{% endhighlight %}
+
+	jdb -attach 8888
 
 Using IntelliJ IDEA
 
