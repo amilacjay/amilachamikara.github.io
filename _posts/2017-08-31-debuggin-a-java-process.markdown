@@ -4,8 +4,8 @@ title:  "Debugging a Java Process"
 date:   2017-08-31 00:33:25 +0530
 categories: Java update
 ---
-###Problem
-
+Problem
+-------
 If there is a java process that is started within our main java application, it is not possible to
 debug in normal way.
 
@@ -13,8 +13,8 @@ debug in normal way.
 	Runtime.getRuntime().exec("java com.test.debugging.Test");
 
 
-###Solution
-
+Solution
+--------
 Steps of JDWP using command line,
 
 1. Start a java process in debug mode (to debug Test.java class)
@@ -38,8 +38,8 @@ Steps of JDWP using command line,
 	
 		jdb -attach 8888
 
-###Using IntelliJ IDEA
-
+Using IntelliJ IDEA
+-------------------
 ![Configurations]({{ site.url }}/assets/image1.png)
 
 Check the [JDWP Documentation][jdwp-docs] for more information. If you have questions, you can inbox me.
