@@ -31,7 +31,7 @@ Steps of JDWP using command line,
 2. Connect to the debug server using another command line
 
 	On Windows:
-	
+
 	    jdb -attach "debug"
 	
 	On Oracle Solaris and Linux operating systems:
